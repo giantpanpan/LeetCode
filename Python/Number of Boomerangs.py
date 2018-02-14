@@ -34,7 +34,7 @@ class Solution:
                 distances[distance] = distances.get(distance, 0) + 1                         #creating a dictionary of distance(key) and the frequence of occurence of
                                                                                              #this key, using hash table method
             
-            print(distances)
+            #print(distances)
             result += sum(item * (item - 1) for item in distances.values())                  #using n*(n-1) combination
             print(result)    
         return result
